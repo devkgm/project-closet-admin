@@ -1,13 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { RecoilRoot } from "recoil";
-import AdminHome from "@pages/admin/home/index";
+import Home from "@pages/home/index";
+import Header from "./components/common/header/Header";
 
 function App() {
     return (
         <RecoilRoot>
+            <Header />
             <BrowserRouter>
                 <Routes>
-                    <Route path='/admin/home' element={<AdminHome />} />
+                    <Route path='/home' element={<Home />} />
                 </Routes>
             </BrowserRouter>
         </RecoilRoot>
