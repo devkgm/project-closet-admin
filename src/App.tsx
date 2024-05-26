@@ -3,6 +3,7 @@ import { RecoilRoot } from "recoil";
 import Home from "@pages/home/index";
 import Header from "./components/common/header/Header";
 import Nav from "./components/common/nav/Nav";
+import Footer from "./components/common/footer/Footer";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                     <Route path='/home' element={<Home />} />
                 </Routes>
             </BrowserRouter>
+            <Footer />
         </RecoilRoot>
     );
 }

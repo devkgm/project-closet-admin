@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 40px;
+
+    border-top: 1px solid $color-gray-200;
+
+    .content {
+        color: $color-gray-500;
+        font-size: 12px;
+        font-weight: 600;
+    }
+}
