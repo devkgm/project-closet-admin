@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    height: 60px;
+
+    border-bottom: 1px solid $color-gray-200;
+    .menu {
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        height: 100%;
+
+        &__item {
+            display: flex;
+            align-items: center;
+
+            height: 100%;
+
+            margin-left: 16px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            button {
+                background-color: transparent;
+                border: none;
+
+                height: 100%;
+
+                font-weight: 700;
+                font-size: 14px;
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &.active {
+                    color: $color-blue-600;
+                    border-bottom: 2px solid $color-blue-600;
+                }
+            }
+        }
+    }
+}
